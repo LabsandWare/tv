@@ -36,8 +36,8 @@
     <script src="vendor/js/modernizr-2.8.3.min.js"></script>
 
     </head>
-    <body>
-      <div class="bg-dark-blue d-none d-sm-none d-md-block text-white" style="height: 3em;" >
+    <body id="top">
+      <div class="bg-dark-blue d-none d-sm-none fix d-md-block text-white" style="height: 3em;" >
         <div  class="container">
           <div class="d-flex justify-content-start">
             <div class="topbar-left mt-1 mr-auto p-2">
@@ -68,7 +68,7 @@
             </div>
             <ul class="list-inline ml-3 p-2 bg-dark-orange">
               <li class="list-inline-item" style=" line-height: 2em; ">
-                Free Consultation
+                 Consultation
               </li>
             </ul>
           </div>
@@ -76,21 +76,21 @@
       </div>
 
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="img/tv_logo.png" class="img-fluid h-25" alt="Team View">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <!-- Desktop Menu -->
-          <div class="d-none d-sm-none d-md-block" >
+      <div id="sticker" class="header-area stick d-none d-sm-none d-md-block">
+        <nav  class="navbar navbar-expand-lg sticky-top  navbar-light bg-white">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.png" class="img-fluid h-25" alt="Team View">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Desktop Menu -->
             <div class="collapse navbar-collapse" >
               <div class="main-menu">
-                <ul class="navbar-nav col-md-11 ml-auto">
+                <ul class="navbar-nav col-md-1 ml-auto">
                   <li class="nav-item active">
                     <a class="nav-link" href="#">Home
                       <span class="sr-only">(current)</span>
@@ -98,37 +98,53 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="#">
-                      Projects
-                    </a>
-                    <ul class="sub-menu">
-                      <li><a href="#">Project Feasibility</a></li> 
-                      <li><a href="#">Project Review</a></li>
+                    <ul class="list-unstyled sub-menu">
+                      <li>
+                        <a href="./about.html">About Us</a>
+                      </li>
                     </ul>
                   </li>
                   <li class="nav-item ">
                     <a class="nav-link" href="#">
                       Services
                     </a>
-                    <ul class="sub-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li> 
-                      <li><a href="#">Something else here</a></li>
+                    <ul class="list-unstyled sub-menu">
+                      <li>
+                        <a href="./services.html">Services</a>
+                      </li>
+                      <li>
+                        <a href="#">Financial Management</a>
+                      </li>
+                      <li>
+                        <a href="#">System Selections</a>
+                      </li>
+                      <li>
+                        <a href="#">Project Management</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#">
+                      Projects
+                    </a>
+                    <ul class="list-unstyled sub-menu">
+                      <li><a href="#">Project Feasibility</a></li> 
+                      <li><a href="#">Project Review</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
+        </nav>
+      </div>
 
-        <!-- Mobile Menu -->
-        <div class="mobile-menu-area d-none d-sm-block d-md-none" >
+      <!-- Mobile Menu -->
+      <nav class="">
+        <div class="mobile-menu-area d-none d-sm-block d-md-none">
           <div class="container">
             <div class="row">
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -161,13 +177,16 @@
                       </a>
                       <ul class="sub-menu">
                         <li>
-                          <a href="#">Action</a>
+                          <a href="./services.html">Services</a>
                         </li>
                         <li>
-                          <a href="#">Another action</a>
+                          <a href="#">Financial Management</a>
                         </li>
                         <li>
-                          <a href="#">Something else here</a>
+                          <a href="#">System Selections</a>
+                        </li>
+                        <li>
+                          <a href="#">Project Management</a>
                         </li>
                       </ul>
                     </li>
@@ -188,10 +207,12 @@
         <div class="intro-carousel owl-carousel owl-theme owl-loaded">
           <div class="owl-stage-outer">
             <div class="owl-stage" style="transform: translate3d(-5208px, 0px, 0px); transition: 0.25s; width: 7812px;">
+
+              <!-- Slide One -->
               <div class="owl-item cloned" style="width: 1302px; margin-right: 0px;">
                 <div class="intro-content">
                   <div class="slider-images">
-                    <img src="./img/fna_flip.jpg" class="img-fluid" style="background-size: cover" alt="British owned financial advisory and consultancy business">
+                    <img src="./img/fna_flip.png" alt="British owned financial advisory and consultancy business">
                   </div>
                   <div class="slider-content">
                     <div class="display-table">
@@ -217,17 +238,19 @@
                   </div>
                 </div>
               </div>
+              <!-- End of First Slide -->
+
               <div class="owl-item cloned" style="width: 1302px; margin-right: 0px;">
                 <div class="intro-content">
                   <div class="slider-images">
-                    <img src="./img/img3.jpg" class="img-fluid" style="background-size: cover" alt="Over 20years Of Adding Value">
+                    <img src="./img/sw.jpeg" alt="Over 20years Of Adding Value">
                   </div>
                   <div class="slider-content">
                     <div class="container">
                       <div class="row">
                         <div class="col-md-12">
                           <div class="layer-1-2">
-                            <h1 class="title2">Over 20years of Adding Value in Financial Management</h1>
+                            <h1 class="title2">Over 30years of Adding Value in Financial Management</h1>
                           </div>
                           <!-- layer 2 -->
                           <div class="layer-1-1 ">
@@ -245,22 +268,20 @@
                   </div>
                 </div>
               </div>
+              <!-- End of Second slide -->
+
             </div>
+          </div>
+          <div class="owl-controls">
             <div class="owl-nav">
-              <div class="owl-prev"><i class="icon icon-chevron-left"></i></div>
-              <div class="owl-next"><i class="icon icon-chevron-right"></div>
-            </div>
-            <div class="owl-dots">
-              <div class="owl-dot active">
-                <span></span>
+              <div class="owl-prev" style="">
+                <i class="icon icon-chevron-left"></i>
               </div>
-              <div class="owl-dot">
-                <span></span>
-              </div>
-              <div class="owl-dot">
-                <span></span>
+              <div class="owl-next" style="">
+                </i>
               </div>
             </div>
+            <div class="owl-dots" style="display: none;"></div>
           </div>
         </div>
       </header>
@@ -359,7 +380,7 @@
               </h3>
               <p>We deliver all aspects of pragmatic and practical business solutions for new or established businesses of any size <br />
                 both foreign and local</p>
-              <hr class="rul">
+              <!-- <hr class="rul"> -->
             </div>
           </div>
           <div class="row">
@@ -441,7 +462,7 @@
               </div>
             </div>
             <div class="col-md-12 text-center">
-              <a class="serve-button" href="#">More Services</a>
+              <a class="btn load-more-btn" href="#">More Services</a>
             </div>
           </div>
         </div>
@@ -652,7 +673,7 @@
                 <div class="footer-content">
                   <div class="footer-head">
                     <div class="footer-logo">
-                      <a href="#"><img src="./img/foot.png" alt="footer logo"></a>
+                      <a href="#"><img src="./img/logo_footer.png" alt="footer logo"></a>
                     </div>
                     <p>
                       Are you looking for professional advice for your new business.Are you looking for professional advice for your new business.Are
@@ -817,7 +838,7 @@
 
     <script src="./js/tv.js"></script>
 
-    <a id="scrollUp" href="./index.html/#top" style="position: fixed; z-index: 2147483647;">
+    <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;">
       <i class="fas fa-angle-up"></i>
     </a>
   </body>
