@@ -67,13 +67,12 @@
   var intro_carousel = $('.intro-carousel');
   intro_carousel.owlCarousel({
     loop: true,
-    nav: true,
+    nav: false,
     autoplay: true,
     dots: false,
-    navText: ["<i class='icon icon-chevron-left'></i>", "<i class='icon icon-chevron-right'></i>"],
     responsive: {
       0: {
-        items: 1
+        items: 1,
       },
       600: {
         items: 1
