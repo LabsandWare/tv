@@ -9,10 +9,27 @@
     pre_loader.fadeOut('slow', function () { $(this).remove(); });
   });	
 
+
+  /*---------------------
+  TOP Menu Stick
+  --------------------- */
+  var windows = $(window);
+  var sticky = $('#sticker');
+
+  windows.on('scroll', function () {
+    var scroll = windows.scrollTop();
+    if (scroll < 300) {
+      sticky.removeClass('stick');
+    } else {
+      sticky.addClass('stick');
+    }
+  });
+
+
   /*----------------------------
   jQuery MeanMenu
   ------------------------------ */
-    var mean_menu = $('nav#dropdown');
+    var mean_menu = $('div#dropdown');
     mean_menu.meanmenu();
 
   /*--------------------------
@@ -32,22 +49,6 @@
   count.counterUp({
     delay: 40,
     time: 3000
-  });
-
-
-  /*---------------------
-  TOP Menu Stick
-  --------------------- */
-  var windows = $(window);
-  var sticky = $('#sticker');
-
-  windows.on('scroll', function () {
-    var scroll = windows.scrollTop();
-    if (scroll < 300) {
-      sticky.removeClass('stick');
-    } else {
-      sticky.addClass('stick');
-    }
   });
 
   /*--------------------------

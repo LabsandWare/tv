@@ -28,11 +28,11 @@
   <link rel="stylesheet" href="vendor/css/flaticon.css">
   <!-- magnific css -->
   <link rel="stylesheet" href="vendor/css/magnific.min.css">
-  <!-- venobox css -->
-  <link rel="stylesheet" href="vendor/css/venobox.css">
 
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="css/tvn.css">
+  <!-- responsive css -->
+  <link rel="stylesheet" href="vendor/css/responsive.css">
 
   <script src="vendor/js/modernizr-2.8.3.min.js"></script>
 
@@ -101,9 +101,7 @@
           <div class="main-menu">
             <ul class="navbar-nav col-md-5 margin">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
-                </a>
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -120,6 +118,7 @@
                 <ul class="list-unstyled sub-menu">
                   <li>
                     <a href="./services.html">Services</a>
+                    <span class="sr-only">(current)</span>
                   </li>
                   <li>
                     <a href="./financial_mangement.html">Financial Management</a>
@@ -128,7 +127,7 @@
                     <a href="./system_selection.html">System Selections</a>
                   </li>
                   <li>
-                    <a href="#">Project Management</a>
+                    <a href="./project.html">Project Management</a>
                   </li>
                 </ul>
               </li>
@@ -143,63 +142,62 @@
   </div>
 
   <!-- Mobile Menu -->
-  <nav class="">
-    <div class="mobile-menu-area d-none d-sm-block d-md-none">
+  <div class="mobile-menu-area d-block d-sm-block d-md-none">
+    <nav class="navbar">
       <div class="container">
+        <div class="logo ml-4">
+          <a href="./index.html">
+            <img src="img/m_logo.png" alt="Team View">
+          </a>
+        </div>
         <div class="row">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="col-md-12">
             <div class="mobile-menu">
-              <ul class="navbar-nav col-md-11 ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">
-                    Projects
-                  </a>
-                  <ul class="sub-menu">
-                    <li>
-                      <a href="#">Project Feasibility</a>
-                    </li>
-                    <li>
-                      <a href="#">Project Review</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">
-                    Services
-                  </a>
-                  <ul class="sub-menu">
-                    <li>
-                      <a href="./services.html">Services</a>
-                    </li>
-                    <li>
-                      <a href="./financial_mangement.html">Financial Management</a>
-                    </li>
-                    <li>
-                      <a href="./services.html">System Selections</a>
-                    </li>
-                    <li>
-                      <a href="./project.html">Project Management</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
+              <div id="dropdown" style="display: block;">
+                <ul>
+                  <li>
+                    <a class="pagess" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="pagess" href="#">About</a>
+                    <ul class="list-unstyled sub-menu">
+                      <li>
+                        <a href="./about.html">About Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="pagess" href="#">
+                      Services
+                    </a>
+                    <ul class="list-unstyled sub-menu">
+                      <li>
+                        <a href="./services.html">Services</a>
+                      </li>
+                      <li>
+                        <a href="./financial_mangement.html">Financial Management</a>
+                      </li>
+                      <li>
+                        <a href="./system_selection.html">System Selections</a>
+                      </li>
+                      <li>
+                        <a href="./project.html">Project Management</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="pagess" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 
   <!-- Headers -->
   <header class="image-bg-fluid-height">
@@ -232,11 +230,13 @@
               <div class="left-menu">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
-                    aria-selected="true">Systems Selection</a>
+                    aria-selected="true">Project Feasibility Studies</a>
                   <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                    aria-selected="false">Corporate Wellness</a>
+                    aria-selected="false">Business Controls</a>
                   <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                    aria-selected="false">Reporting</a>
+                    aria-selected="false">Business Incorporation</a>
+                  <a class="nav-link" id="v-pills-pre-tab" data-toggle="pill" href="#v-pills-pre" role="tab" aria-controls="v-pills-pre"
+                    aria-selected="false">Pre and Post Project review</a>
                 </div>
               </div>
             </div>
@@ -258,64 +258,51 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                   <div class="single-well last-part">
                     <a href="#">
-                      <h3>ERP and EIS Systems</h3>
+                      <h3>Business Planning, Budgeting, Forecasting and Project Feasibility Studies</h3>
                     </a>
-                    <p class="text-justify">At
-                      <strong>Team Value</strong>
-                      <sup>®</sup> we have many years experience in providing guidance and assistance in identifying, developing
-                      and implementing integrated computer based process solutions ranging from more straightforward financial
-                      based control systems to more advance fully integrated ERP solutions.
-                      <br /> Effective business systems increase the ability of the business to operate effectively, make decisions,
-                      manage costs and protect assets. Where the operational needs of the business are not met by the current
-                      business systems and processes the organisation needs to undertake a thorough and objective process
-                      to determine an appropriate solution either to remediate the current system based on what is in place
-                      or to select and implement an appropriate replacement.</p>
+                    <p class="text-justify">
+                      Proper feasibility studies and analysis of any proposed project before commitment to invest and undertake is the key to success
+                      and to ensuring that any business undertaking with a large or potentially high risk initiative delivers both the business
+                      objectives and required business benefits.
+                      <br /> Our team of experts will ensure that your projects are fully evaluated and subjected to thorough analysis to determine their
+                      viability and practicability and the operational and technical feasibility of available solutions, associated risks and costs
+                      can be made before you commit to invest. <br />
+                      Thorough and robust planning is fundamental to the success of any business.
+                      <br /> <strong>Team Value</strong>
+                      <sup>®</sup> consultants can provide you with all the support and assistance you need to help and guide you as you develop
+                      your business strategy and perform necessary evaluations of your plans including :
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="row mar-row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                  <div class="single-page">
-                    <div class="page-img elec-page">
-                      <img src="./img/fna_flip.png" class="img-fluid" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                  <div class="single-well">
-                    <a href="#">
-                      <h4>Our expertise covers</h4>
-                    </a>
-                    <ul class="list-unstyled marker-list text-justify">
-                      <li>Process and procedures design and implementation</li>
-                      <li>Process mapping and redesign</li>
-                      <li>Change management and business process reengineering - BPR</li>
-                      <li>Integrated and ERP systems selection and recommendation and implementation</li>
-                      <li>Full project management of implementation of change</li>
-                      <li>Full implementation and hand holding after go-live</li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- End single page -->
-              </div>
-              <div class="row mt-2">
-                <!-- End single page -->
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="single-well">
-                    <p class="text-justify">We provide a robust and proven methodology to drive the specification and selection process. Our methodology
-                      is underpinned by our ability to analyse and define your business requirements and the operational
-                      direction of your business and our knowledge of systems and available solutions. Our approach ensures
-                      that systems are objectively assessed using both quantitative and qualitative criterion.
-                      <br /> Our solution selection process is tailored to the complexity of the business requirements and the
-                      availability of solutions that match the organisations operational needs, culture and experience. We
-                      also ensure that any changes to business processes required as a result of the new system are identified
-                      and analysed for appropriate change.
-                      <br /> We are able to offer full project management of your implementation process. Good project management
-                      is hard to find. Our proven experience in management of implementation projects will remove the risk
-                      of failure.</p>
+                  <dl class="row">
+                    <dt class="col-sm-4">Evaluating Business Plans</dt>
+                    <dd class="col-sm-8"><p class="text-justify">
+                      We can prepare and review business plans to be presented in support of an application for funding.</p></dd>
+                  
+                    <dt class="col-sm-4">Budgeting and Strategic Planning</dt>
+                    <dd class="col-sm-8">
+                      <p class="text-justify">Facilitate the annual budgeting process. Assist in developing long-term financial models and projections that are consistent
+                      with your organisation's strategic plan.</p>
+                    </dd>
+                  
+                    <dt class="col-sm-4">Business Case Development</dt>
+                    <dd class="col-sm-8"><p class="text-justify">
+                      Development of business cases using our financial modeling tools. This work includes working with clients and reviewing their
+                      existing business cases where they are putting forward plans to raise funds for major capital or investment projects.</p>
+                    </dd>
+                  
+                    <dt class="col-sm-4">Cash Flow Planning and Forecasting</dt>
+                    <dd class="col-sm-8"><p class="text-justify">Develop process and multi period models to predict cash flow and identify strategies to minimize deficits.</p></dd>
 
-                  </div>
+                    <dt class="col-sm-4 text-truncate">Capital Investment Alternatives</dt>
+                    <dd class="col-sm-8"><p class="text-justify">Evaluate lease versus purchase decisions. Recommend alternatives for financing capital expenditures.</p></dd>
+
+                  </dl>
                 </div>
+                <!-- End single page -->
               </div>
             </div>
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -332,25 +319,25 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                   <div class="single-well last-part">
                     <a href="#">
-                      <h3>Corporate Wellness</h3>
+                      <h3>Business Controls, Compliance and Governance</h3>
                     </a>
                     <p class="text-justify">
+                      The establishment of a proper framework of business controls and related processes is an absolute key to the foundation for
+                      any business that regards itself as a serious player and fully compliant with both local and international best practice. <br />
                       <strong>Team Value</strong>
-                      <sup>®</sup> primary approach to business support is that we specialise in determining and focusing on the
-                      state and well-being of your business. Through a corporate health check we identify and proffer pragmatic
-                      solutions
-                      <br /> We understand that the power and therefore, success, of your business is only as strong as the combined
-                      strength of the individuals in that business Empowering and motivating the organisation through organisational
-                      change requires a singular devotion to maintaining workforce morale. Keeping the performance all levels
-                      of employees effective through even small change in operations can be difficult, unless you, as a business
-                      owner, place value on the personal development of each employee. We achieve this through a detailed
-                      assessment of each of your staff through individual interviews and other measures and by so doing we
-                      can determine the mental health of your business and thereby evaluate the level of coaching and development
-                      required in the key areas of leadership and proper empowerment Organizational change can also apply
-                      to culture, business strategies and human resources management. These non-corporeal changes occur both
-                      in the minds of your workers and within the philosophies of how you, as the owner, choose to do business.
-                      Successfully motivating and empowering your employees through an organizational change will enable
-                      the brightest energy to manifest to fuel the business.</p>
+                      <sup>®</sup> pwill take you through all aspects of the design and implementation of a robust system of internal controls appropriate to
+                      your business encompassing your business objectives, organisation structure, policies, procedures and processes.
+                      <br /> In addition we can assist you in establishing your risk based internal audit needs and structure. <br />
+                     We can review internal controls over your organization's cash and investment assets in an effort to improve income from
+                    cash and investments consistent with investment criteria established by the board. <br />
+                     Increasingly, in the Nigerian environment, any business that regards itself as a serious player must ensure full compliance
+                    with international regulations and best practice in particular as this relates to audited financial statements and corporate
+                    governance. This now entails compliance with – inter alia - US GAAP, IFRS and IAS rules and Sarbanes Oxley rules.
+                    <br /> <strong>Team Value</strong>
+                    <sup>®</sup> consultants can carry out a health check of your recording processes and policies and reporting structures to ensure that
+                    your underlying controls fundamentals are robust and in place and compliant with accepted and expected international best
+                    practices.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -369,23 +356,46 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                   <div class="single-well last-part">
                     <a href="#">
-                      <h3>Reporting - Executive Information Systems and Decision Support systems</h3>
+                      <h3>Business Incorporation and Due Diligence</h3>
                     </a>
-                    <p class="text-justify">The key to good business management is the establishment of a robust and fit-for-purpose system of comprehensive
-                      reporting that provides management with timely, accurate and routine business metrics. Typically this
-                      very basic requirement, though recognised, is not at all common in many business undertakings.
-                      <br
-                      /> At
+                    <p class="text-justify">
                       <strong>Team Value</strong>
-                      <sup>®</sup> we specialise in helping businesses identify their key information requirements and information
-                      metrics which form the basis of planning and the implementation of any good integrated system of accounting,
-                      controls and business and financial management.
-                      <br /> We will provide suggestions for changes in policies, practices, reports, and procedures that will
-                      help your board of directors and executive management receive the appropriate information to understand
-                      and control the financial affairs of your organisation and, if requested, we can assist financial personnel
-                      in implementation of our recommendations.
-                      <br /> Guidance in handling the increasingly complex procedure of reporting to funding sources can also be
-                      provided.</p>
+                      <sup>®</sup> services includes establishing full legal set-up and consultancy for incorporation of new businesses and start-ups and foreign
+                      enterprises establishing business in Nigeria, together with all necessary business and tax registrations including VAT, PAYE
+                      – payroll taxes, WHT and other local tax compliance. We are also able to give full advice relating to taxation of employees
+                      including expatriates.
+                      <br /> We will ensure that you obtain all necessary expatriate quotas and provide a full quota management maintenance and returns
+                      compliance service. In addition we can provide a full visa service for all foreign staff.
+                      <br /> In addition we can carry out due diligence examinations on behalf of overseas businesses planning to invest in Nigeria.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-pre" role="tabpanel" aria-labelledby="v-pills-pre-tab">
+              <div class="row mb-3">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="single-page">
+                    <div class="page-img elec-page">
+                      <img src="./img/ss.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+                <!-- strat single page -->
+                <!-- single-well end-->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="single-well last-part">
+                    <a href="#">
+                      <h3>Pre and Post Project review and economic evaluation of projects</h3>
+                    </a>
+                    <p class="text-justify">
+                      <strong>Team Value</strong>
+                      <sup>®</sup> experts are well equipped to carry out pre and post audits and reviews of your projects.
+                      <br /> The most important phase in the preparation of any project is the development of the initial cost estimates and the economic
+                      evaluation. Just one of the key skills of our team of experts is subjecting project assumptions and project costs estimates
+                      to rigorous analysis and evaluation.
+                      <br /> As important as pre project review is post review or post audit. From the examination of completed or partially complete
+                      projects we can review the events that occurred and evaluate not only what happened, but also why those events happened and
+                      from these learnings we can determine the correct actions to take to improve the results of future projects.</p>
                   </div>
                 </div>
               </div>

@@ -28,18 +28,18 @@
   <link rel="stylesheet" href="vendor/css/flaticon.css">
   <!-- magnific css -->
   <link rel="stylesheet" href="vendor/css/magnific.min.css">
-  <!-- venobox css -->
-  <link rel="stylesheet" href="vendor/css/venobox.css">
 
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="css/tvn.css">
+  <!-- responsive css -->
+  <link rel="stylesheet" href="vendor/css/responsive.css">
 
   <script src="vendor/js/modernizr-2.8.3.min.js"></script>
 
 </head>
 
 <body id="top">
-  <div class="bg-dark-blue d-none d-sm-none d-md-block text-white" style="height: 3em;">
+  <div class="bg-dark-blue d-none d-sm-none fix d-md-block text-white" style="height: 3em;">
     <div class="container">
       <div class="d-flex justify-content-start">
         <div class="topbar-left mt-1 mr-auto p-2">
@@ -77,7 +77,7 @@
         </div>
         <ul class="list-inline ml-3 p-2 bg-dark-orange">
           <li class="list-inline-item" style=" line-height: 2em; ">
-             Consultation
+            Consultation
           </li>
         </ul>
       </div>
@@ -85,7 +85,7 @@
   </div>
 
   <!-- Navigation -->
-  <div id="sticker" class="header-area stick">
+  <div id="sticker" class="header-area stick d-none d-sm-none d-md-block">
     <nav class="navbar navbar-expand-lg sticky-top  navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -97,49 +97,101 @@
         </button>
 
         <!-- Desktop Menu -->
-        <div class="d-none d-sm-none d-md-block">
-          <div class="collapse navbar-collapse">
-            <div class="main-menu">
-              <ul class="navbar-nav col-md-12 ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="./index.html">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                  <ul class="list-unstyled sub-menu">
-                    <li>
-                      <a href="./about.html">About Us</a>
-                    </li>
-                    <li>
-                      <a href="#">Team</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">
-                    Services
-                  </a>
-                  <ul class="list-unstyled sub-menu">
-                    <li>
-                      <a href="./services.html">Services</a>
-                    </li>
-                    <li>
-                      <a href="./financial_mangement.html">Financial Management</a>
-                    </li>
-                    <li>
-                      <a href="./system_selection.html">System Selections</a>
-                    </li>
-                    <li>
-                      <a href="./project.html">Project Management</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-              </ul>
+        <div class="collapse navbar-collapse">
+          <div class="main-menu">
+            <ul class="navbar-nav col-md-5 margin">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                <ul class="list-unstyled sub-menu">
+                  <li>
+                    <a href="./about.html">About Us</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">
+                  Services
+                </a>
+                <ul class="list-unstyled sub-menu">
+                  <li>
+                    <a href="./services.html">Services</a>
+                  </li>
+                  <li>
+                    <a href="./financial_mangement.html">Financial Management</a>
+                  </li>
+                  <li>
+                    <a href="./system_selection.html">System Selections</a>
+                  </li>
+                  <li>
+                    <a href="./project.html">Project Management</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-area d-block d-sm-block d-md-none">
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo ml-4">
+          <a href="./index.html">
+            <img src="img/m_logo.png" alt="Team View">
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mobile-menu">
+              <div id="dropdown" style="display: block;">
+                <ul>
+                  <li>
+                    <a class="pagess" href="#">Home</a>
+                  </li>
+                  <li>
+                    <a class="pagess" href="#">About</a>
+                    <ul class="list-unstyled sub-menu">
+                      <li>
+                        <a href="./about.html">About Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="pagess" href="#">
+                      Services
+                    </a>
+                    <ul class="list-unstyled sub-menu">
+                      <li>
+                        <a href="./services.html">Services</a>
+                        <span class="sr-only">(current)</span>
+                      </li>
+                      <li>
+                        <a href="./financial_mangement.html">Financial Management</a>
+                      </li>
+                      <li>
+                        <a href="./system_selection.html">System Selections</a>
+                      </li>
+                      <li>
+                        <a href="./project.html">Project Management</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="pagess" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
