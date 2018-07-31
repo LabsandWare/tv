@@ -1208,11 +1208,11 @@ Overview
 }
 .footer-list li a::after {
     position: absolute;
-    content: "\e876";
+    content: ">";
     right: auto;
     top: 2px;
     font-family: fanton;
-    font-size: 12px;
+    font-size: 15px;
     left: 0;
 }
 .footer-list li a:hover {
@@ -1267,12 +1267,14 @@ Overview
 }
 .breadcrumb .section-headline{
     margin-bottom: 0px;
+    padding-left: 29rem;
 }
 .breadcrumb .section-headline h3::after {
     display: none;
 }
 .breadcrumb ul {
     padding: 10px 0px;
+    margin-left: -11rem;
 }
 .breadcrumb ul li {
     display: inline-block;
@@ -1280,6 +1282,7 @@ Overview
     padding: 0px 10px 0px 20px;
     position: relative;
     font-size: 16px;
+    margin-top: 6rem;
 }
 .breadcrumb ul li.home-bread{
     padding-left: 0px;
@@ -1502,14 +1505,50 @@ Overview
     padding-bottom: 0;
 }
 .left-menu ul li.active a {
-    background: #f5af25 none repeat scroll 0 0;
+    background: #f5af25 none repeat scroll 0 0 !important;
     color: #fff;
     position: relative;
 }
 .left-menu ul li a:hover {
-    color: #fff;
-    background: #f5af25; 
+    color: #fff !important;
+    background: #f5af25 !important; 
 }
+.left-menu a:hover {
+    color: #fff !important;
+    background: #f5af25 !important; 
+    content: ">";
+}
+
+.left-menu a {
+    background: #f9f9f9;
+    color: #444;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 14px 20px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.left-menu a::after,
+.left-menu  a:hover::after {
+    content: " >";
+    color: #f9f9f9;
+    font-family: fanton;
+    font-size: 19px;
+    position: absolute;
+    right: 18px;
+    top: 15px;
+}
+.mast{
+    background: #f5af25 none repeat scroll 0 0;
+    color: #fff;
+    font-weight:bolder; 
+    padding-left: 0rem; 
+    padding-right: 0rem;
+}
+ 
 .left-menu ul li a {
     background: #f9f9f9;
     color: #444;
